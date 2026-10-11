@@ -1,0 +1,6 @@
+Flask
+numpy
+qiskit
+qiskit-aer
+sentence-transformers
+transformers
