@@ -1,4 +1,4 @@
-#Meaningful Quantum Search _MQS_
+# Meaningful Quantum Search _MQS_
 
 How MQS Works
 
@@ -12,13 +12,13 @@ _(Also saves the semantic embedding vectors of documents already searched)_
 # THIS EFFORT IS SUPPORT BY QOLLAB & QION
 
 
-#IMPORTANT NOTE:
+# IMPORTANT NOTE:
   The github contains the code that can run on local hardware but due to time constraints the "files" are the strings (This could easily be changed to read files in a directory if given time). 
   We do however calculate embeddings in the github code and provide a GUI
 
   Our website also shows an online GUI running whats in the github
 
 
-#USAGE
+# USAGE
   Install all requirements and then run main.py
   then go to http://localhost:8080 and enjoy!
