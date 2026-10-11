@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<link rel="manifest"
+        href="{{ url_for('static', filename='manifest.json') }}">
+
+<meta name="theme-color" content="#1a1a2e">
+
+
+
+<title>Quantum Sort</title>
+
+<!-- Have to put this function here for the url to path right -->
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='summoner.css') }}">
+
+
+
+<!-- Apple appmode fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Golemn">
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent">
+</head>
+<body onscroll="">
+
+<br>
+<h1>Test our Quantum Semantic Searcher!</h1>
+
+
+
+<div class="requestBar" id="requestBar">
+    <form action="{{ url_for('home') }}" method="POST" id="form">
+        <input type="text", id="request" name="request" autofocus>
+    </form>    
+    <img src="{{ url_for('static', filename='arrow.png')}}" onclick="document.getElementById('form').requestSubmit()">
+
+
+
+</div>
+
+<h2 id="userRequest"></h2>
+<table id="filesToSort">
+  <thead>
+    <tr>
+      <th>Unsorted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>monster.txt</td></tr>
+    <tr><td>cow.txt</td></tr>
+    <tr><td>darth.txt</td></tr>
+    <tr><td>scary.txt</td></tr>
+    <tr><td>penguin.txt</td></tr>
+    <tr><td>batman.txt</td></tr>
+    <tr><td>doritos.txt</td></tr>
+    <tr><td>space.txt</td></tr>
+    <tr><td>pizza.txt</td></tr>
+    <tr><td>guitar.txt</td></tr>
+  </tbody>
+</table>
+
+
+
+</body>
+
+
+<script>
+
+// Prevent iPhone auto scroll on keyboard call
+setInterval(() => {
+window.scrollTo(0, 0)
+    
+}, 100);
+
+
+
+</script>

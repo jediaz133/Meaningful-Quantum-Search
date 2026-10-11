@@ -1,0 +1,147 @@
+:root {
+    --screenWidth: calc(100vw / 1px);
+    --screenHeight: calc(100vh / 1px);
+    --screenRatioWL: calc(var(--screenWidth) / var(--screenHeight));
+    --isPhone: calc(var(--screenRatioWL) < 1.0);
+    --background-primary: rgb(78, 97, 72);
+    --requestBoxColor: darkgray;
+}
+
+table {
+    background-color: whitesmoke;
+}
+
+/* For phones/tablets */
+@media (max-width: 99vh){
+
+
+body {
+    overflow: clip;
+    background-color: var(--background-primary);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top:10vh; */
+}
+
+.requestBar {
+    
+    background-color: var(--requestBoxColor);
+    width: 98vw;
+    height: 6vh;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 3vh;
+
+    text-shadow: 2px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition-duration: 0.2s;
+}
+
+.requestBar input {
+    background: none;
+    border: none;
+    font-size: 1vh;
+    width: 45vw;
+    outline: none;
+}
+
+
+.requestBar input[type="text"]:focus-visible{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 16px;
+    /* width: 0vw; */
+
+}
+
+/* .selected {
+    transition-duration: 0.2s;
+    margin-top: 25vh;
+} */
+
+.requestBar img {
+    /* height: max-content; */
+    /* width: max-content; */
+    height: 5vh;
+    width: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 100px;
+    border-width: 0px;
+    border-color: rgb(1, 1, 1);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+}
+
+
+
+/* For computers/laptops */
+@media (max-height: 100vw){
+body {
+    background-color: var(--background-primary);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.requestBar {
+    
+    background-color: var(--requestBoxColor);
+    width: 65vw;
+    height: 10vh;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+
+
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.requestBar input {
+    background: none;
+    border: none;
+    font-size: 6vh;
+    width: 40vw;
+    height: 10vh;
+
+}
+
+
+.requestBar input[type="text"]:focus-visible{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 6vh;
+
+}
+
+.requestBar img {
+    height: 8vh;
+    width: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    border-radius: 100px;
+    border-width: 50px;
+    border-color: rgb(1, 1, 1);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+}
