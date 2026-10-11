@@ -17,3 +17,8 @@ _(Also saves the semantic embedding vectors of documents already searched)_
   We do however calculate embeddings in the github code and provide a GUI
 
   Our website also shows an online GUI running whats in the github
+
+
+#USAGE
+  Install all requirements and then run main.py
+  then go to http://localhost:8080 and enjoy!
