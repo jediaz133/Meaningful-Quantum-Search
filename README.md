@@ -9,7 +9,7 @@ _(Also saves the semantic embedding vectors of documents already searched)_
 
 **3rd)** Then each document's semantic vector compared to the search requests' semantic vector. _The comparison is done with a quantum circuit and then results in a similarity/likeness score of 0.0-1.0. _
 
-# THIS EFFORT IS SUPPORT BY QOLLAB & QION
+# THIS EFFORT IS SUPPORTED BY QOLLAB & QION
 
 
 # IMPORTANT NOTE:
@@ -18,6 +18,11 @@ _(Also saves the semantic embedding vectors of documents already searched)_
 
   Our website also shows an online GUI running whats in the github
 
+# HUGE THANKS TO THIS RESEARCH PAPER
+
+https://arxiv.org/abs/2512.02619v1
+
+THESE PEOPLE ARE AMAZING WE LOVE YOU THIS PAPER HELPED A LOT WITH UNDERSTANDING WHAT'S GOING ON
 
 # USAGE
   Install all requirements and then run main.py
